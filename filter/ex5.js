@@ -39,6 +39,11 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  return items.filter(function(item){
+    if  (item.includes('Revenge')) {
+      return item;
+    }
+  });
 }
 
 // Ne pas modifier l'export
